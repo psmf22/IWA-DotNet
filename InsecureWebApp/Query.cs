@@ -9,6 +9,7 @@ using MicroFocus.InsecureWebApp.Data;
 
 namespace MicroFocus.InsecureWebApp
 {
+    //this is a comment to trigger a pull request
     public class Query
     {
         public async Task<List<Order>> GetOrders([Service] ApplicationDbContext _context, int? iOrderId = 0, bool? isAdmin=false)
