@@ -81,3 +81,4 @@ jobs:
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: ./gh-fortify-sast.sarif
+          ref: ${{ github.head_ref }}
