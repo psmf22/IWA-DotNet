@@ -47,7 +47,7 @@ jobs:
       - name: Download Fortify ScanCentral Client
         uses: fortify/gha-setup-scancentral-client@v2
         with:
-          version: 22.1.2
+          version: 23.1
       - name: Package Code + Dependencies
         run: scancentral package -bt msbuild -bf IWA.Net.sln -o package.zip -oss
 
