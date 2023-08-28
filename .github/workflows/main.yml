@@ -15,6 +15,7 @@ name: Fortify on Demand SAST+OSS Scan
 
 on:
   workflow_dispatch:
+  pull_request:
   pull_request_target:
     branches: 
       - 'main'
