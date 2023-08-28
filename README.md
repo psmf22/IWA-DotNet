@@ -1,6 +1,6 @@
 ﻿[![Build Status](https://dev.azure.com/mfdemouk/IWA.NET/_apis/build/status/IWA%20-%20Fortify%20-%20CI?branchName=master)](https://dev.azure.com/mfdemouk/IWA.NET/_build/latest?definitionId=5&branchName=master)
 
-# IWA .NET (Insecure Web App) Pharmacy Direct
+# IWA .NET (Insecure Web App) Pharmacy Directa
 
 #### Table of Contents
 
