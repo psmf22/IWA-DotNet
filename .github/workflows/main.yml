@@ -42,8 +42,11 @@ jobs:
           distribution: 'temurin'
 
       # generate debricked lock files
+      - name: Download debricked cli
+        run: curl -L https://github.com/debricked/cli/releases/latest/download/cli_windows_x86_64.tar.gz | tar -xz debricked
+
       - name: Debricked resolve
-        uses: debricked/actions/resolve@v3
+        run: debricked resolve
 
       # Prepare source+dependencies for upload. The default example is for a Maven project that uses pom.xml. ScanCentral Client documentation is located at https://www.microfocus.com/documentation/fortify-software-security-center/
       - name: Download Fortify ScanCentral Client
