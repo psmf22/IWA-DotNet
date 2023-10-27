@@ -41,6 +41,10 @@ jobs:
           java-version: 11
           distribution: 'temurin'
 
+      # generate debricked lock files
+      - name: Debricked resolve
+        uses: debricked/actions/resolve@v3
+
       # Prepare source+dependencies for upload. The default example is for a Maven project that uses pom.xml. ScanCentral Client documentation is located at https://www.microfocus.com/documentation/fortify-software-security-center/
       - name: Download Fortify ScanCentral Client
         uses: fortify/gha-setup-scancentral-client@v2
