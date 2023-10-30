@@ -44,7 +44,11 @@ jobs:
       # generate debricked lock files
       - name: Download debricked cli
         shell: bash
-        run: curl -L https://github.com/debricked/cli/releases/latest/download/cli_windows_x86_64.tar.gz | tar -xz debricked
+        run: curl -o debricked.tar.gz https://github.com/debricked/cli/releases/latest/download/cli_windows_x86_64.tar.gz 
+
+      - name: Unpack debricked cli
+        shell: bash
+        run: tar -xvzf .\debricked.tar.gz
 
       - name: Debricked resolve
         run: debricked resolve
