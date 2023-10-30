@@ -50,6 +50,7 @@ jobs:
         run: tar -xvzf debricked.tar.gz
 
       - name: Debricked resolve
+        shell: bash
         run: debricked resolve
 
       # Prepare source+dependencies for upload. The default example is for a Maven project that uses pom.xml. ScanCentral Client documentation is located at https://www.microfocus.com/documentation/fortify-software-security-center/
