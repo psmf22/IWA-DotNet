@@ -48,7 +48,7 @@ jobs:
 
       - name: Unpack debricked cli
         shell: bash
-        run: tar -xvzf .\debricked.tar.gz
+        run: tar -xvzf debricked.tar.gz
 
       - name: Debricked resolve
         run: debricked resolve
